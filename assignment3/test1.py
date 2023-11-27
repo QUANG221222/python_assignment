@@ -12,8 +12,7 @@ con_giap = {
     10: "Ngựa",
     11: "Cừu"
     }
-
-def xac_dinh_con_giap(nam):
+""" def xac_dinh_con_giap(nam):
     chi_so=nam % 12
     return con_giap[chi_so]
 
@@ -22,4 +21,8 @@ try:
     con_giap= xac_dinh_con_giap(nam)
     print(f"Con giáp theo Trung Quốc tương ứng với năm {nam} là : {con_giap}")
 except ValueError:
-    print("Nhập ko hợp lệ")
+    print("Nhập ko hợp lệ") """
+nam=int(input("Nhập năm:  "))
+chi_so=nam % 12
+con_giap=con_giap[chi_so]
+print(f"Con giáp theo Trung Quốc tương ứng với năm {nam} là : {con_giap}")
