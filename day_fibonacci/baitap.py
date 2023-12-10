@@ -9,7 +9,7 @@
   #  second=fib
 #print(f"{n} trong dãy fibonacci là {second}")
 def fibonacci(num):
-    if(num==0 or num==1): return 1
+    if(num==0 or num==1): return num
     else: return fibonacci(num-1)+fibonacci(num-2)
 n=int(input("Nhập số nguyên:"))
 print(fibonacci(n))
