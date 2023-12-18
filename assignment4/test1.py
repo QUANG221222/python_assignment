@@ -4,7 +4,7 @@ def isValid(side1, side2, side3):
         return True
     else: return False
 def area(side1, side2, side3):
-    if(isValid==True):
+    if(isValid):
         half_parameter=(side1+side2+side3)/2
         area=math.sqrt(half_parameter*(half_parameter-side1)*(half_parameter-side2)*(half_parameter-side3))
         print("The area of the triangle is",round(area,2))
