@@ -1,0 +1,1 @@
+print("All position of x in list is :")

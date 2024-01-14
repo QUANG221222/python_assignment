@@ -1,5 +1,9 @@
 # Hàm tính tổng các chữ số của một số
-def tinh_tong_cac_chu_so(so):
+def tong(num):
+    if num==0: return 0
+    return round(num%10)+tong(num/10)
+print(tong(1234))
+""" def tinh_tong_cac_chu_so(so):
     # Chuyển số thành chuỗi để lặp qua từng chữ số
     chuoi_so = str(so)
     # Khởi tạo tổng bằng 0
@@ -18,4 +22,4 @@ try:
     # Hiển thị kết quả
     print("Tổng các chữ số của", N, "là", ket_qua)
 except ValueError:
-    print("Đầu vào không hợp lệ. Vui lòng nhập một số nguyên hợp lệ.")
+    print("Đầu vào không hợp lệ. Vui lòng nhập một số nguyên hợp lệ.") """
